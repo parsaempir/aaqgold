@@ -1,7 +1,6 @@
 import Navbar from '@/components/Navbar';
 import TrustStrip from '@/components/TrustStrip';
 import ProductsShowcase from '@/components/ProductsShowcase';
-import InstallmentBlurb from '@/components/InstallmentBlurb';
 import StickyActionBar from '@/components/StickyActionBar';
 import Footer from '@/components/Footer';
 
@@ -12,7 +11,6 @@ export default function HomePage() {
       <main id="top" className="pt-16 md:pt-20">
         <TrustStrip />
         <ProductsShowcase />
-        <InstallmentBlurb />
       </main>
       <Footer />
       <StickyActionBar />

@@ -5,7 +5,6 @@ import LivePriceCompact from './LivePriceCompact';
 
 const links = [
   { href: '#bars', label: 'Bars' },
-  { href: '#installment', label: 'Installment' },
   { href: '#help', label: 'Help' },
 ];
 
@@ -27,12 +26,12 @@ export default function Navbar() {
           : 'border-b border-transparent bg-ink-900/40 backdrop-blur-md'
       }`}
     >
-      <div className="mx-auto flex h-14 max-w-7xl items-center justify-between gap-4 px-4 md:h-16 md:px-8">
-        <a href="#top" className="group flex items-center gap-2">
-          <div className="bg-gold-gradient flex h-7 w-7 items-center justify-center rounded-full font-serif text-sm font-bold text-ink-900 transition-transform group-hover:scale-110">
+      <div className="mx-auto flex h-14 max-w-7xl items-center justify-between gap-3 px-3 sm:px-4 md:h-16 md:gap-4 md:px-8">
+        <a href="#top" className="group flex shrink-0 items-center gap-2">
+          <div className="bg-gold-gradient flex h-6 w-6 items-center justify-center rounded-full font-serif text-xs font-bold text-ink-900 transition-transform group-hover:scale-110 md:h-7 md:w-7 md:text-sm">
             P
           </div>
-          <span className="font-serif text-base tracking-wide text-white">
+          <span className="font-serif text-sm tracking-wide text-white md:text-base">
             Place<span className="text-gold-400">holder</span>
           </span>
         </a>

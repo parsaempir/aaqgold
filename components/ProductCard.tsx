@@ -32,30 +32,34 @@ export default function ProductCard({ p, i }: { p: Product; i: number }) {
         <div className="pointer-events-none absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/15 to-transparent transition-transform duration-1000 ease-out group-hover:translate-x-full" />
       </div>
 
-      <div className="p-4">
-        <div className="flex items-baseline justify-between gap-3">
-          <div>
-            <div className="font-serif text-2xl text-white">{p.weight}</div>
-            <div className="mt-0.5 text-[10px] uppercase tracking-widest text-neutral-500">
+      <div className="p-3 md:p-4">
+        <div className="flex items-baseline justify-between gap-2 md:gap-3">
+          <div className="min-w-0">
+            <div className="font-num text-xl font-semibold tracking-tight text-white tabular-nums md:text-2xl">
+              {p.weight}
+            </div>
+            <div className="mt-0.5 truncate text-[9px] uppercase tracking-widest text-neutral-500 md:text-[10px]">
               {p.refinery}
             </div>
           </div>
-          <div className="text-right">
-            <div className="text-gold-gradient font-serif text-lg leading-none">
+          <div className="shrink-0 text-right">
+            <div className="text-gold-gradient font-num text-base font-semibold leading-none tabular-nums md:text-lg">
               ${p.price.toLocaleString()}
             </div>
-            <div className="mt-1 text-[10px] text-neutral-500">
+            <div className="mt-1 font-num text-[10px] text-neutral-500 tabular-nums">
               ${p.monthly}/mo
             </div>
           </div>
         </div>
 
-        <div className="mt-4 grid grid-cols-2 gap-2">
-          <button className="bg-gold-gradient gold-shine rounded-full px-3 py-2 text-xs font-semibold text-ink-900 transition-shadow hover:shadow-lg hover:shadow-gold-400/25">
-            Buy Now
+        <div className="mt-3 grid grid-cols-2 gap-1.5 md:mt-4 md:gap-2">
+          <button className="bg-gold-gradient gold-shine rounded-full px-2 py-1.5 text-[11px] font-semibold text-ink-900 transition-shadow hover:shadow-lg hover:shadow-gold-400/25 md:px-3 md:py-2 md:text-xs">
+            <span className="md:hidden">Buy</span>
+            <span className="hidden md:inline">Buy Now</span>
           </button>
-          <button className="rounded-full border border-gold-400/30 px-3 py-2 text-xs font-medium text-gold-200 transition-all hover:border-gold-400 hover:bg-gold-400/10">
-            Installment
+          <button className="rounded-full border border-gold-400/30 px-2 py-1.5 text-[11px] font-medium text-gold-200 transition-all hover:border-gold-400 hover:bg-gold-400/10 md:px-3 md:py-2 md:text-xs">
+            <span className="md:hidden">Plan</span>
+            <span className="hidden md:inline">Installment</span>
           </button>
         </div>
       </div>

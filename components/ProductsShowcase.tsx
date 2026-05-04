@@ -26,9 +26,9 @@ export default function ProductsShowcase() {
 
   return (
     <section id="bars" className="relative pt-3">
-      <div className="mx-auto max-w-7xl px-4 md:px-8">
-        <div className="mb-6 flex flex-col items-start justify-between gap-4 md:flex-row md:items-center">
-          <p className="text-sm text-neutral-400">
+      <div className="mx-auto max-w-7xl px-3 sm:px-4 md:px-8">
+        <div className="mb-5 flex flex-col items-center justify-between gap-3 md:mb-6 md:flex-row md:items-center md:gap-4">
+          <p className="text-center text-xs text-neutral-400 md:text-left md:text-sm">
             Live spot pricing · Free insured shipping
           </p>
           <ProductFilters active={active} onChange={handleChange} />
@@ -36,7 +36,7 @@ export default function ProductsShowcase() {
 
         <motion.div
           layout
-          className="grid grid-cols-2 gap-3 md:grid-cols-3 md:gap-4 lg:grid-cols-4"
+          className="grid grid-cols-2 gap-2.5 sm:gap-3 md:grid-cols-3 md:gap-4 lg:grid-cols-4"
         >
           <AnimatePresence mode="popLayout">
             {loading

@@ -27,11 +27,11 @@ export default function LivePriceCompact() {
       <span className="text-[10px] uppercase tracking-[0.2em] text-neutral-400">
         XAU/oz
       </span>
-      <span className="font-serif text-sm text-white tabular-nums" suppressHydrationWarning>
+      <span className="font-num text-sm font-medium text-white tabular-nums" suppressHydrationWarning>
         ${price.toFixed(2)}
       </span>
       <span
-        className={`text-[10px] tabular-nums ${
+        className={`font-num text-[10px] tabular-nums ${
           up ? 'text-emerald-400' : 'text-red-400'
         }`}
       >

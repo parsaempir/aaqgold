@@ -18,7 +18,7 @@ export default function ProductFilters({
           <button
             key={f.id}
             onClick={() => onChange(f.id)}
-            className="relative rounded-full px-4 py-1.5 text-xs font-medium transition-colors md:px-5 md:py-2 md:text-sm"
+            className="relative rounded-full px-3 py-1.5 text-[11px] font-medium transition-colors md:px-5 md:py-2 md:text-sm"
           >
             {isActive && (
               <motion.span

@@ -21,7 +21,7 @@ export const products: Product[] = [
     monthly: 16,
     category: 'small',
     refinery: 'PAMP Suisse',
-    image: '/1.jpg',
+    image: '/news2.jpg',
   },
   {
     id: '2.5g',
@@ -51,7 +51,7 @@ export const products: Product[] = [
     monthly: 159,
     category: 'small',
     refinery: 'PAMP Suisse',
-    image: '/home-slider2.jpg',
+    image: '/multigram-bars2.jpg',
     popular: true,
   },
   {
@@ -83,7 +83,7 @@ export const products: Product[] = [
     monthly: 1570,
     category: 'investment',
     refinery: 'PAMP Suisse',
-    image: '/zurich-bullion-vault1.jpg',
+    image: '/multigram-bars5.jpg',
   },
   {
     id: '250g',
@@ -93,7 +93,7 @@ export const products: Product[] = [
     monthly: 3920,
     category: 'investment',
     refinery: 'Argor-Heraeus',
-    image: '/home-slider2.jpg',
+    image: '/wholesale-gold1.jpg',
   },
 ];
 
