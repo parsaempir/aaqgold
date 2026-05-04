@@ -4,14 +4,28 @@ import { useEffect, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 
 export default function StickyActionBar() {
-  const [show, setShow] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const [nearFooter, setNearFooter] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setShow(window.scrollY > 320);
+    const onScroll = () => setScrolled(window.scrollY > 320);
     onScroll();
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
+
+  useEffect(() => {
+    const footer = document.querySelector('footer');
+    if (!footer) return;
+    const obs = new IntersectionObserver(
+      ([entry]) => setNearFooter(entry.isIntersecting),
+      { rootMargin: '0px 0px 96px 0px' }
+    );
+    obs.observe(footer);
+    return () => obs.disconnect();
+  }, []);
+
+  const show = scrolled && !nearFooter;
 
   return (
     <AnimatePresence>
