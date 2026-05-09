@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#FBF9F4" />
+  <meta name="description" content="Aurum — Buy investment-grade gold with cash or installment plans. Refined. Transparent. Vaulted." />
+  <title>Aurum° — Refined gold ownership</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800&family=Geist+Mono:wght@400;500&family=Fraunces:opsz,wght@9..144,400;9..144,500&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Page reveal -->
+  <div class="page-reveal" id="pageReveal">
+    <div class="page-reveal__inner">
+      <span class="page-reveal__deg">A°</span>
+      <span class="page-reveal__bar"><i></i></span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container site-header__inner">
+      <a href="#top" class="brand" aria-label="Aurum — home">
+        <span class="brand__name">Aurum<span class="brand__deg">°</span></span>
+      </a>
+
+      <nav class="primary-nav" aria-label="Primary">
+        <ul class="primary-nav__list">
+          <li><a href="#benefits" class="nav-link"><span class="nav-link__num">01</span><span>Cash &amp; plans</span></a></li>
+          <li><a href="#how" class="nav-link"><span class="nav-link__num">02</span><span>How it works</span></a></li>
+          <li><a href="#trust" class="nav-link"><span class="nav-link__num">03</span><span>Trust</span></a></li>
+          <li><a href="#cta" class="nav-link"><span class="nav-link__num">04</span><span>Open account</span></a></li>
+        </ul>
+      </nav>
+
+      <div class="site-header__actions">
+        <a href="#cta" class="btn btn--ghost btn--sm magnetic" data-magnetic><span>Sign in</span></a>
+        <a href="#cta" class="btn btn--primary btn--sm magnetic" data-magnetic>
+          <span>Open account</span>
+          <i class="btn__arrow" aria-hidden="true"></i>
+        </a>
+      </div>
+
+      <button
+        class="hamburger"
+        id="hamburger"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="mobileNav"
+      >
+        <span class="hamburger__bar"></span>
+        <span class="hamburger__bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile nav -->
+  <aside class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <div class="mobile-nav__panel">
+      <p class="mobile-nav__label">Index</p>
+      <nav aria-label="Mobile">
+        <ul class="mobile-nav__list">
+          <li><a href="#benefits" class="mobile-nav__link"><span class="mobile-nav__num">01</span><span>Cash &amp; plans</span></a></li>
+          <li><a href="#how" class="mobile-nav__link"><span class="mobile-nav__num">02</span><span>How it works</span></a></li>
+          <li><a href="#trust" class="mobile-nav__link"><span class="mobile-nav__num">03</span><span>Trust</span></a></li>
+          <li><a href="#cta" class="mobile-nav__link"><span class="mobile-nav__num">04</span><span>Open account</span></a></li>
+        </ul>
+      </nav>
+      <div class="mobile-nav__cta">
+        <a href="#cta" class="btn btn--primary btn--block">Open account</a>
+        <a href="#cta" class="btn btn--ghost btn--block">Sign in</a>
+      </div>
+      <div class="mobile-nav__foot">
+        <span>Zurich · London · Singapore</span>
+        <span>© Aurum 2026</span>
+      </div>
+    </div>
+  </aside>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero__canvas-wrap" aria-hidden="true">
+        <canvas id="heroCanvas"></canvas>
+      </div>
+
+      <div class="container hero__inner">
+        <p class="hero__eyebrow" data-reveal>
+          <span class="hero__eyebrow-line"></span>
+          <span data-split-words>Investment-grade gold · since 2014</span>
+        </p>
+
+        <h1 class="hero__title" data-split-lines>
+          Gold ownership,<br/>
+          <em>refined.</em>
+        </h1>
+
+        <p class="hero__sub" data-reveal>
+          Buy investment-grade gold outright — or pay over time, at the live spot price.
+          Allocated, audited, and yours alone.
+        </p>
+
+        <div class="hero__cta" data-reveal>
+          <a href="#cta" class="btn btn--primary btn--lg magnetic" data-magnetic>
+            <span>Buy gold now</span>
+            <i class="btn__arrow" aria-hidden="true"></i>
+          </a>
+          <a href="#how" class="btn btn--ghost btn--lg magnetic" data-magnetic>
+            <span>Installment plans</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__strip" data-reveal>
+        <div class="container hero__strip-inner">
+          <div class="hero__strip-cell hero__strip-cell--lead">
+            <span class="hero__strip-label">Live spot · XAU/USD</span>
+            <span class="hero__strip-value">
+              <i class="hero__pulse" aria-hidden="true"></i>
+              $<span id="heroPrice">2,418.50</span>
+              <span class="hero__strip-delta">+0.42%</span>
+            </span>
+          </div>
+          <div class="hero__strip-cell">
+            <span class="hero__strip-label">Fineness</span>
+            <span class="hero__strip-value">999.9 / 1000</span>
+          </div>
+          <div class="hero__strip-cell">
+            <span class="hero__strip-label">Vaulted in</span>
+            <span class="hero__strip-value">Zurich · 24/7</span>
+          </div>
+          <div class="hero__strip-cell">
+            <span class="hero__strip-label">Plans from</span>
+            <span class="hero__strip-value">$50 / mo</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFITS — editorial alternating rows -->
+    <section class="benefits" id="benefits">
+      <div class="container">
+        <header class="ed-head">
+          <p class="ed-eyebrow" data-reveal><span>02</span> — Two paths</p>
+          <h2 class="ed-title" data-split-lines>Two ways to own.<br/><em>One standard.</em></h2>
+          <p class="ed-lede" data-reveal>
+            Whether you settle today or pay over months, every gram is held in
+            audited vaults, priced against the live market, and titled to you.
+          </p>
+        </header>
+
+        <div class="rows">
+          <article class="row" data-reveal-row>
+            <div class="row__num"><span>01</span></div>
+            <div class="row__copy">
+              <h3 class="row__title">Cash gold purchase</h3>
+              <p class="row__text">Buy physical gold instantly at the live spot price. Settle in seconds, ship to your vault or door.</p>
+              <ul class="row__list">
+                <li><span class="row__list-dot"></span>Live spot pricing</li>
+                <li><span class="row__list-dot"></span>Same-day allocation</li>
+                <li><span class="row__list-dot"></span>Insured global delivery</li>
+              </ul>
+            </div>
+            <div class="row__display">
+              <span class="row__display-tag">Instant</span>
+              <span class="row__display-big" data-magnify>OWN<br/>IT.</span>
+            </div>
+          </article>
+
+          <article class="row row--reverse" data-reveal-row>
+            <div class="row__num"><span>02</span></div>
+            <div class="row__copy">
+              <h3 class="row__title">Installment plans</h3>
+              <p class="row__text">Lock in today's price and pay across 3, 6 or 12 months. Your gold accrues with every payment — no surprises.</p>
+              <ul class="row__list">
+                <li><span class="row__list-dot"></span>From $50 / month</li>
+                <li><span class="row__list-dot"></span>0% hidden fees</li>
+                <li><span class="row__list-dot"></span>Cancel any time</li>
+              </ul>
+            </div>
+            <div class="row__display row__display--gold">
+              <span class="row__display-tag">Flexible</span>
+              <span class="row__display-big" data-magnify>$50<i>/mo</i></span>
+            </div>
+          </article>
+
+          <article class="row" data-reveal-row>
+            <div class="row__num"><span>03</span></div>
+            <div class="row__copy">
+              <h3 class="row__title">Secure transactions</h3>
+              <p class="row__text">Bank-grade encryption, segregated holdings, ISO 27001 audited. Your gold is yours alone.</p>
+              <ul class="row__list">
+                <li><span class="row__list-dot"></span>Allocated &amp; audited</li>
+                <li><span class="row__list-dot"></span>Insured up to $250M / vault</li>
+                <li><span class="row__list-dot"></span>Real-time auditable holdings</li>
+              </ul>
+            </div>
+            <div class="row__display">
+              <span class="row__display-tag">Secure</span>
+              <span class="row__display-big" data-magnify>100<i>%</i></span>
+            </div>
+          </article>
+
+          <article class="row row--reverse" data-reveal-row>
+            <div class="row__num"><span>04</span></div>
+            <div class="row__copy">
+              <h3 class="row__title">Transparent pricing</h3>
+              <p class="row__text">See the live spot, our flat fee, and your final amount — before you ever commit a cent.</p>
+              <ul class="row__list">
+                <li><span class="row__list-dot"></span>Flat 0.4% spread</li>
+                <li><span class="row__list-dot"></span>No setup fee</li>
+                <li><span class="row__list-dot"></span>No hidden spreads</li>
+              </ul>
+            </div>
+            <div class="row__display">
+              <span class="row__display-tag">No spread</span>
+              <span class="row__display-big" data-magnify>0<i>%</i></span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS — vertical timeline -->
+    <section class="how" id="how">
+      <div class="container">
+        <header class="ed-head ed-head--center">
+          <p class="ed-eyebrow" data-reveal><span>03</span> — How it works</p>
+          <h2 class="ed-title" data-split-lines>From spot price<br/><em>to vault.</em></h2>
+        </header>
+
+        <div class="timeline">
+          <div class="timeline__line" aria-hidden="true">
+            <span class="timeline__progress" id="timelineProgress"></span>
+          </div>
+
+          <ol class="timeline__steps">
+            <li class="t-step" data-reveal-row>
+              <span class="t-step__dot" aria-hidden="true"></span>
+              <span class="t-step__num">Step 01</span>
+              <h3 class="t-step__title">Choose your gold</h3>
+              <p class="t-step__text">From 1g bars to 1kg ingots and certified coins. Live pricing updates as you browse.</p>
+            </li>
+            <li class="t-step" data-reveal-row>
+              <span class="t-step__dot" aria-hidden="true"></span>
+              <span class="t-step__num">Step 02</span>
+              <h3 class="t-step__title">Cash or installments</h3>
+              <p class="t-step__text">Pay outright or split across flexible monthly plans. We lock in your price the moment you confirm.</p>
+            </li>
+            <li class="t-step" data-reveal-row>
+              <span class="t-step__dot" aria-hidden="true"></span>
+              <span class="t-step__num">Step 03</span>
+              <h3 class="t-step__title">Secure checkout</h3>
+              <p class="t-step__text">Verify, settle and store. Your gold is allocated to your name within minutes — fully insured.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST -->
+    <section class="trust" id="trust">
+      <div class="container">
+        <header class="ed-head ed-head--split">
+          <div>
+            <p class="ed-eyebrow" data-reveal><span>04</span> — Built like a bank</p>
+            <h2 class="ed-title" data-split-lines>Priced like a market.<br/><em>Held like a vault.</em></h2>
+          </div>
+          <p class="ed-lede" data-reveal>
+            Independently audited, fully insured, and supported by humans —
+            not bots — every day of the week.
+          </p>
+        </header>
+
+        <div class="stats">
+          <div class="stat" data-reveal-row>
+            <span class="stat__num" data-counter data-to="99.99" data-decimals="2">0</span>
+            <span class="stat__suffix">%</span>
+            <span class="stat__label">Fine gold purity, every bar</span>
+          </div>
+          <div class="stat" data-reveal-row>
+            <span class="stat__prefix">$</span>
+            <span class="stat__num" data-counter data-to="2.4" data-decimals="1">0</span>
+            <span class="stat__suffix">B<small>+</small></span>
+            <span class="stat__label">Of gold under custody</span>
+          </div>
+          <div class="stat" data-reveal-row>
+            <span class="stat__num" data-counter data-to="40" data-decimals="0">0</span>
+            <span class="stat__suffix">k<small>+</small></span>
+            <span class="stat__label">Verified gold owners</span>
+          </div>
+          <div class="stat" data-reveal-row>
+            <span class="stat__num" data-counter data-to="4.9" data-decimals="1">0</span>
+            <span class="stat__suffix"><small>/5</small></span>
+            <span class="stat__label">12,400+ verified reviews</span>
+          </div>
+        </div>
+
+        <div class="marquee" aria-hidden="true">
+          <div class="marquee__track">
+            <span>LBMA accredited</span><i></i>
+            <span>ISO 27001 certified</span><i></i>
+            <span>Lloyd's of London insured</span><i></i>
+            <span>Audited by Deloitte</span><i></i>
+            <span>Allocated holdings</span><i></i>
+            <span>Real-time auditable</span><i></i>
+            <span>Refined in Switzerland</span><i></i>
+
+            <span aria-hidden="true">LBMA accredited</span><i></i>
+            <span aria-hidden="true">ISO 27001 certified</span><i></i>
+            <span aria-hidden="true">Lloyd's of London insured</span><i></i>
+            <span aria-hidden="true">Audited by Deloitte</span><i></i>
+            <span aria-hidden="true">Allocated holdings</span><i></i>
+            <span aria-hidden="true">Real-time auditable</span><i></i>
+            <span aria-hidden="true">Refined in Switzerland</span><i></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta" id="cta">
+      <div class="cta__bg" aria-hidden="true"></div>
+      <div class="cta__grain" aria-hidden="true"></div>
+      <div class="container cta__inner">
+        <p class="ed-eyebrow ed-eyebrow--light" data-reveal><span>05</span> — Begin</p>
+        <h2 class="cta__title" data-split-lines>
+          Your first gram<br/><em>takes a minute.</em>
+        </h2>
+        <p class="cta__sub" data-reveal>
+          Set up your account, pick your plan, and own real gold by the end of this page.
+        </p>
+        <div class="cta__actions" data-reveal>
+          <a href="#" class="btn btn--gold btn--lg magnetic" data-magnetic>
+            <span>Buy gold now</span>
+            <i class="btn__arrow" aria-hidden="true"></i>
+          </a>
+          <a href="#" class="btn btn--ghost btn--ghost--light btn--lg magnetic" data-magnetic>
+            <span>See installment plans</span>
+          </a>
+        </div>
+        <p class="cta__fine" data-reveal>No setup fees · Cancel any plan, any time</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container site-footer__inner">
+      <div class="site-footer__brand">
+        <span class="brand__name">Aurum<span class="brand__deg">°</span></span>
+        <span class="site-footer__tag">Refined gold ownership</span>
+      </div>
+      <div class="site-footer__cols">
+        <div>
+          <span class="site-footer__head">Product</span>
+          <a href="#">Cash purchase</a>
+          <a href="#">Installments</a>
+          <a href="#">Vault storage</a>
+          <a href="#">Live spot</a>
+        </div>
+        <div>
+          <span class="site-footer__head">Company</span>
+          <a href="#">About</a>
+          <a href="#">Press</a>
+          <a href="#">Careers</a>
+          <a href="#">Vaults</a>
+        </div>
+        <div>
+          <span class="site-footer__head">Support</span>
+          <a href="#">Help center</a>
+          <a href="#">Contact</a>
+          <a href="#">Status</a>
+          <a href="#">Audits</a>
+        </div>
+      </div>
+      <div class="site-footer__base">
+        <span>© 2026 Aurum Holdings AG · Zurich</span>
+        <span>Privacy · Terms · Cookies</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cursor glow -->
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <!-- Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"
+      }
+    }
+  </script>
+  <script type="module" src="script.js"></script>
+</body>
+</html>

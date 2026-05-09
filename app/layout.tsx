@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from 'next';
-import { Inter, Playfair_Display, Space_Grotesk } from 'next/font/google';
+import { Inter, Manrope, Plus_Jakarta_Sans } from 'next/font/google';
 import './globals.css';
+import SmoothScroll from '@/components/SmoothScroll';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -8,42 +9,42 @@ const inter = Inter({
   display: 'swap',
 });
 
-const playfair = Playfair_Display({
+const manrope = Manrope({
   subsets: ['latin'],
-  variable: '--font-playfair',
+  variable: '--font-manrope',
   display: 'swap',
   weight: ['400', '500', '600', '700', '800'],
 });
 
-const spaceGrotesk = Space_Grotesk({
+const jakarta = Plus_Jakarta_Sans({
   subsets: ['latin'],
-  variable: '--font-space-grotesk',
+  variable: '--font-jakarta',
   display: 'swap',
-  weight: ['400', '500', '600', '700'],
+  weight: ['400', '500', '600', '700', '800'],
 });
 
 export const metadata: Metadata = {
-  title: 'AaqGold — Buy Gold Bars Safely & Smartly',
+  title: 'Aurea — Buy Gold Today. Pay Your Way.',
   description:
-    'Premium certified gold bullion. Pay in full or via flexible 0% installment plans. LBMA-accredited, fully insured, lifetime buy-back.',
+    'Invest in real, vault-stored gold instantly or choose flexible installment plans designed for modern buyers. Certified, insured, and transparent.',
   keywords: [
-    'buy gold bars',
-    'gold bullion',
+    'buy gold',
     'gold investment',
-    'installment gold',
-    'certified gold',
-    'physical gold',
+    'gold installment',
+    'digital gold',
+    'cash gold',
+    'gold savings plan',
   ],
   openGraph: {
-    title: 'AaqGold — Buy Gold Bars Safely & Smartly',
+    title: 'Aurea — Buy Gold Today. Pay Your Way.',
     description:
-      'Premium certified gold bullion with cash or 0% installment plans.',
+      'Real gold, instantly or in installments. Certified, insured, vault-stored.',
     type: 'website',
   },
 };
 
 export const viewport: Viewport = {
-  themeColor: '#0A0A0A',
+  themeColor: '#FBF8F2',
 };
 
 export default function RootLayout({
@@ -54,10 +55,10 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${playfair.variable} ${spaceGrotesk.variable}`}
+      className={`${inter.variable} ${manrope.variable} ${jakarta.variable}`}
     >
-      <body className="bg-ink-900 text-neutral-200 font-sans antialiased">
-        {children}
+      <body className="min-h-screen bg-canvas text-ink font-sans antialiased">
+        <SmoothScroll>{children}</SmoothScroll>
       </body>
     </html>
   );
