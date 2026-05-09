@@ -110,7 +110,7 @@ export default function CTABanner() {
                   href="#story"
                   className="btn-ghost w-full justify-center"
                 >
-                  Discover the Aurea way
+                  Discover the Placeholder way
                 </a>
 
                 <div className="mt-3 flex items-center gap-2 text-xs text-ink-mute">

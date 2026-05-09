@@ -11,7 +11,7 @@ const sections = [
     title: 'Product',
     links: [
       { label: 'Buy gold', href: '#cash' },
-      { label: 'The Aurea way', href: '#story' },
+      { label: 'The Placeholder way', href: '#story' },
       { label: 'Sell gold', href: '#cash' },
       { label: 'Take delivery', href: '#trust' },
     ],
@@ -97,11 +97,11 @@ export default function Footer() {
             <a href="#hero" className="group flex items-center gap-2.5 text-ink">
               <span className="relative flex h-9 w-9 items-center justify-center overflow-hidden rounded-full bg-gold-gradient shadow-[inset_0_1px_0_rgba(255,255,255,0.5)] transition-transform duration-700 group-hover:rotate-[18deg]">
                 <span className="font-display text-[14px] font-extrabold text-[#1A1306]">
-                  Au
+                  Ph
                 </span>
               </span>
               <span className="font-display text-xl font-extrabold tracking-tight">
-                Aurea
+                Placeholder
               </span>
             </a>
             <p className="mt-5 max-w-xs text-pretty text-sm leading-relaxed text-ink-soft">
@@ -150,7 +150,7 @@ export default function Footer() {
 
         <div className="mt-6 flex flex-col items-start justify-between gap-3 text-xs text-ink-mute md:flex-row md:items-center">
           <div>
-            © {new Date().getFullYear()} Aurea Gold Inc. · LBMA member ·
+            © {new Date().getFullYear()} Placeholder Gold Inc. · LBMA member ·
             Lloyd&rsquo;s insured · SOC 2 Type II
           </div>
           <div className="flex items-center gap-4">
@@ -165,14 +165,14 @@ export default function Footer() {
         aria-hidden
         className="relative mx-auto flex max-w-[1400px] items-end justify-center px-6 pb-6 pt-2"
       >
-        <div className="font-display flex w-full select-none items-end justify-between gap-[2vw] leading-[0.95] tracking-tighter">
-          {'AUREA'.split('').map((ch, i) => (
+        <div className="font-display flex w-full select-none items-end justify-between gap-[0.6vw] leading-[0.95] tracking-tighter">
+          {'PLACEHOLDER'.split('').map((ch, i) => (
             <span
               key={i}
               className="block flex-1 text-center"
               style={{ overflow: 'hidden', paddingBottom: '0.06em' }}
             >
-              <span className="wm-l block text-[clamp(4rem,18vw,15rem)] font-extrabold text-gold-gradient">
+              <span className="wm-l block text-[clamp(1.8rem,8.5vw,7.5rem)] font-extrabold text-gold-gradient">
                 {ch}
               </span>
             </span>

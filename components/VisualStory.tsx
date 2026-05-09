@@ -155,7 +155,7 @@ export default function VisualStory() {
 
         <div className="mx-auto grid h-full w-full max-w-7xl grid-cols-1 items-center gap-12 px-6 lg:grid-cols-12">
           <div className="lg:col-span-5">
-            <div className="story-eyebrow eyebrow mb-6">The Aurea way</div>
+            <div className="story-eyebrow eyebrow mb-6">The Placeholder way</div>
 
             <div className="relative min-h-[360px]">
               {chapters.map((c, i) => (
@@ -261,7 +261,7 @@ function CoinDeco() {
       <text
         x="200"
         y="222"
-        fontFamily="serif"
+        fontFamily="var(--font-manrope), ui-sans-serif, system-ui, sans-serif"
         fontSize="74"
         fontWeight="800"
         textAnchor="middle"
@@ -269,7 +269,7 @@ function CoinDeco() {
         opacity="0.5"
         letterSpacing="-3"
       >
-        AU
+        PH
       </text>
     </svg>
   );

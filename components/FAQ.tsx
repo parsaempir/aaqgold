@@ -69,7 +69,7 @@ export default function FAQ() {
           </h2>
           <p className="mt-5 max-w-md text-pretty text-base text-ink-soft md:text-lg">
             Everything you need to know about buying, holding and redeeming
-            gold with Aurea. Still curious?{' '}
+            gold with Placeholder. Still curious?{' '}
             <a className="font-medium text-gold-700 underline-offset-4 hover:underline" href="#cta">
               Talk to us
             </a>

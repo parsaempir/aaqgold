@@ -123,7 +123,7 @@ export default function Hero() {
             className="inline-flex items-center gap-3 text-[11px] font-medium uppercase tracking-[0.22em] text-gold-600"
           >
             <span className="block h-px w-8 bg-gold-300" />
-            Aurea · Real gold, real-time
+            Placeholder · Real gold, real-time
           </div>
 
           <h1
@@ -156,7 +156,7 @@ export default function Hero() {
               <Arrow />
             </a>
             <a ref={secondaryBtnRef} href="#story" className="btn-ghost">
-              Discover Aurea
+              Discover Placeholder
             </a>
           </div>
         </div>

@@ -24,7 +24,7 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: 'Aurea — Buy Gold Today. Pay Your Way.',
+  title: 'Placeholder — Buy Gold Today. Pay Your Way.',
   description:
     'Invest in real, vault-stored gold instantly or choose flexible installment plans designed for modern buyers. Certified, insured, and transparent.',
   keywords: [
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     'gold savings plan',
   ],
   openGraph: {
-    title: 'Aurea — Buy Gold Today. Pay Your Way.',
+    title: 'Placeholder — Buy Gold Today. Pay Your Way.',
     description:
       'Real gold, instantly or in installments. Certified, insured, vault-stored.',
     type: 'website',

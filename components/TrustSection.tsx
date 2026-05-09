@@ -60,7 +60,7 @@ export default function TrustSection() {
               Built like a bank. Calm like a vault.
             </h2>
             <p className="mt-5 max-w-md text-pretty text-base text-ink-soft md:text-lg">
-              When you own gold with Aurea, it&rsquo;s yours — provably,
+              When you own gold with Placeholder, it&rsquo;s yours — provably,
               physically, and protected by the most respected names in the
               industry.
             </p>

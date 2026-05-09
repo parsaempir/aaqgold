@@ -80,7 +80,7 @@ export default function Benefits() {
     >
       <div className="mx-auto max-w-7xl px-6">
         <div className="bft-heading max-w-2xl">
-          <div className="eyebrow">Why Aurea</div>
+          <div className="eyebrow">Why Placeholder</div>
           <h2 className="font-display mt-3 text-balance text-4xl font-extrabold tracking-tight text-ink md:text-5xl">
             Premium-grade gold ownership, without the friction.
           </h2>

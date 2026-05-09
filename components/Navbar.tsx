@@ -5,7 +5,7 @@ import gsap from 'gsap';
 
 const links = [
   { href: '#cash', label: 'Shop' },
-  { href: '#story', label: 'The Aurea way' },
+  { href: '#story', label: 'The Placeholder way' },
   { href: '#calc', label: 'Calculator' },
 ];
 
@@ -121,16 +121,16 @@ export default function Navbar() {
               <a
                 href="#hero"
                 className="group flex items-center gap-2.5 px-1 text-ink"
-                aria-label="Aurea — home"
+                aria-label="Placeholder — home"
               >
                 <span className="relative flex h-8 w-8 items-center justify-center overflow-hidden rounded-full bg-gold-gradient shadow-[inset_0_1px_0_rgba(255,255,255,0.5)] transition-transform duration-700 group-hover:rotate-[18deg]">
                   <span className="font-display text-[13px] font-extrabold text-[#1A1306]">
-                    Au
+                    Ph
                   </span>
                   <span className="pointer-events-none absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/65 to-transparent transition-transform duration-1000 group-hover:translate-x-full" />
                 </span>
                 <span className="font-display text-[1.05rem] font-extrabold tracking-tight">
-                  Aurea
+                  Placeholder
                 </span>
               </a>
 
