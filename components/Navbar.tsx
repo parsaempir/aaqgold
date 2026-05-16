@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import Link from 'next/link';
 import gsap from 'gsap';
 
 const links = [
@@ -147,12 +148,15 @@ export default function Navbar() {
               </nav>
 
               <div className="hidden items-center gap-2 md:flex">
-                <a href="#cta" className="nav-link">
+                <Link href="/signin" className="nav-link">
                   Sign in
-                </a>
-                <a href="#cash" className="btn-gold !py-2.5 !px-4 !text-sm">
+                </Link>
+                <Link
+                  href="/signup"
+                  className="btn-gold !py-2.5 !px-4 !text-sm"
+                >
                   Get started
-                </a>
+                </Link>
               </div>
 
               <button
@@ -229,20 +233,20 @@ export default function Navbar() {
           </ul>
 
           <div ref={sheetCtaRef} className="mt-auto grid grid-cols-2 gap-3">
-            <a
-              href="#cta"
+            <Link
+              href="/signin"
               onClick={() => setOpen(false)}
               className="btn-ghost justify-center"
             >
               Sign in
-            </a>
-            <a
-              href="#cash"
+            </Link>
+            <Link
+              href="/signup"
               onClick={() => setOpen(false)}
               className="btn-gold justify-center"
             >
               Get started
-            </a>
+            </Link>
           </div>
         </div>
       </div>
